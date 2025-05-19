@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #f9f6ec; 
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.nav-container {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  list-style: none;
+  margin: 0 100px;
+  gap: 20px;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 50px;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  font-size: 28px;
+  font-weight: 900;
+  font-family: 'Pretendard', sans-serif;
+  color: black;
+}

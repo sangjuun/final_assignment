@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>마이페이지</title>
+  <link rel="stylesheet" href="myPage.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script defer src="myPage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<header>
+  <nav class="nav-container">
+    <ul class="nav-left">
+      <li><a href="#">상담</a></li>
+      <li><a href="#">자가진단</a></li>
+      <li><a href="#">명상</a></li>
+    </ul>
+
+    <div class="nav-logo">소보로</div>
+
+    <ul class="nav-right">
+      <li><a href="#">위치안내</a></li>
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">로그인/회원가입</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li data-tab="counseling" class="active">상담내역</li>
+        <li data-tab="selftest">자가진단내역</li>
+        <li data-tab="emotion">호전상태</li>
+        <li data-tab="info">개인정보수정</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div id="counseling" class="tab-content active"></div>
+      <div id="selftest" class="tab-content"></div>
+      <div id="emotion" class="tab-content">
+        <canvas id="emotionChart" width="600" height="300"></canvas>
+      </div>
+      <div id="info" class="tab-content">
+        <p>이름 변경</p>
+        <p>비밀번호 변경</p>
+        <p>전화번호 변경</p>
+        <p>이메일 변경</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
